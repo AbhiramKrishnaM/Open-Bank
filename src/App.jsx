@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App ">
-      {/* <RemainingFunds data={one} /> */}
+      <RemainingFunds data={one} />
       <UpcomingBills bills={bills} />
     </div>
   );
