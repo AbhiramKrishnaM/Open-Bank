@@ -1,6 +1,7 @@
 import RemainingFunds from "./components/RemainingFunds";
 import "./App.css";
 import UpcomingBills from "./components/UpcomingBills";
+import Cards from "./components/Cards";
 
 function App() {
   const one = {
@@ -18,6 +19,7 @@ function App() {
     <div className="App ">
       <RemainingFunds data={one} />
       <UpcomingBills bills={bills} />
+      <Cards />
     </div>
   );
 }
