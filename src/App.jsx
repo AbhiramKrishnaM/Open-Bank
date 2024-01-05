@@ -1,9 +1,9 @@
-import RemainingFunds from "./components/RemainingFunds";
 import "./App.css";
-import UpcomingBills from "./components/UpcomingBills";
-import Cards from "./components/Cards";
-import PayCard from "./components/PayCard";
-import CardInfo from "./components/CardInfo";
+import RemainingFunds from "./components/pages /RemainingFunds";
+import UpcomingBills from "./components/pages /UpcomingBills";
+import Cards from "./components/pages /Cards";
+import PayCard from "./components/pages /PayCard";
+import CardInfo from "./components/pages /CardInfo";
 
 function App() {
   const one = {

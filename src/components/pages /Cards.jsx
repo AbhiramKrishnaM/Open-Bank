@@ -1,6 +1,6 @@
 import React from "react";
-import AddCard from "./button/AddCard";
-import RightArrow from "./button/RightArrow";
+import AddCard from "../common/button/AddCard";
+import RightArrow from "../common/button/RightArrow";
 import PaymentCard from "./card/PaymentCard";
 
 export default function Cards() {

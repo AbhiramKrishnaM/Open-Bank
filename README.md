@@ -8,7 +8,7 @@
 bun i 
 ```
 
-- start the server 
+- starting the server 
 
 ```bash
 bun run dev
