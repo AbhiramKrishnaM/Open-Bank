@@ -1,4 +1,6 @@
 import "./App.css";
+import TopNavbar from "./components/common/navbar/Top"; // Top Navbar
+
 import RemainingFunds from "./components/pages /RemainingFunds";
 import UpcomingBills from "./components/pages /UpcomingBills";
 import Cards from "./components/pages /Cards";
@@ -29,12 +31,14 @@ function App() {
   };
 
   return (
-    <div className="App ">
-      <RemainingFunds data={one} />
-      <UpcomingBills bills={bills} />
-      <Cards />
-      <PayCard payCard={payCard} />
-      <CardInfo cardInfo={cardInfo} />
+    <div className="App">
+      <TopNavbar />
+
+      {/* <RemainingFunds data={one} /> */}
+      {/* <UpcomingBills bills={bills} /> */}
+      {/* <Cards /> */}
+      {/* <PayCard payCard={payCard} /> */}
+      {/* <CardInfo cardInfo={cardInfo} /> */}
     </div>
   );
 }
