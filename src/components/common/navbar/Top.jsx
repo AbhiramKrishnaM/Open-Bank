@@ -7,8 +7,10 @@ function TopNavbar() {
   const route = [{ id: 0, name: "", link: "", icon: "", img: "" }];
 
   return (
-    <div class="bg-red-200">
-      <h1>This is navbar</h1>
+    <div class="">
+      <ul>
+        <li>First url</li>
+      </ul>
     </div>
   );
 }
