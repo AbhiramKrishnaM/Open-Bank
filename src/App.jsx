@@ -7,6 +7,9 @@ import Cards from "./components/pages /Cards";
 import PayCard from "./components/pages /PayCard";
 import CardInfo from "./components/pages /CardInfo";
 
+import { useSelector, useDispatch } from "react-redux";
+import { increment, amountAdded } from "./features/counter/counterSlice";
+
 function App() {
   const one = {
     amount: "200",
@@ -30,9 +33,22 @@ function App() {
     expiryDate: "2/33",
   };
 
+  function counter() {}
+
+  const value = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
+  function handler() {
+    // dispatch(increment());
+
+    dispatch(amountAdded(30));
+  }
+
   return (
     <div className="App">
       <TopNavbar />
+
+      <button onClick={handler}>Count{value}</button>
 
       {/* <RemainingFunds data={one} /> */}
       {/* <UpcomingBills bills={bills} /> */}
